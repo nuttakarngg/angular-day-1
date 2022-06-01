@@ -1,0 +1,22 @@
+div {
+  margin: 10px;
+  display: flex;
+  button {
+    background-color: rgb(35, 59, 241);
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 10px;
+  }
+  input{
+    outline: 0;
+    border-left: 0;
+    border-width: 1px;
+    text-align: center;
+    border-right: 0;
+    border-color: #aaa;
+    &:focus{
+      outline: 0;
+    }
+  }
+}

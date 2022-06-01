@@ -1,0 +1,5 @@
+<span>{{ minLabel }}</span>
+<app-input-number [step]="10" [(counter)]="squareWidth"></app-input-number>
+<span>{{ maxLabel }}</span>
+<app-input-number [step]="10" [(counter)]="squareHeight"></app-input-number>
+<div class="square" [style.width.px]="squareWidth" [style.height.px]="squareHeight"></div>

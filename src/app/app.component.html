@@ -1,0 +1,25 @@
+<div class="border-1" *ngIf="showInputNumber">
+  <button class="close-button" (click)="showInputNumber = false">x</button>
+  <h4>Input Number Componenet:</h4>
+  <app-input-number
+    [step]="10"
+    [counter]="0"
+    (counterChange)="LoggingNumber($event)"
+  ></app-input-number>
+  <app-input-number
+    [step]="20"
+    [counter]="5"
+    (counterChange)="LoggingNumber($event)"
+  ></app-input-number>
+  <app-input-number
+    [step]="30"
+    [counter]="10"
+    (counterChange)="LoggingNumber($event)"
+  ></app-input-number>
+</div>
+<div class="border-1" *ngIf="showMaxMinMeter">
+  <button class="close-button" (click)="showMaxMinMeter = false">x</button>
+  <h4>Max-Min Meter Componenet:</h4>
+  <app-max-min-meter minLabel="Width Value" maxLabel="Height Value" ></app-max-min-meter>
+
+</div>

@@ -1,0 +1,15 @@
+.border-1 {
+  border: 1px solid #aaa;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  h4 {
+    text-align: center;
+  }
+  .close-button {
+    background-color: rgb(228, 8, 8);
+    color: #fff;
+    border: 0;
+    outline: 0;
+  }
+}
