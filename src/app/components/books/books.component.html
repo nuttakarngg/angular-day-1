@@ -1,0 +1,36 @@
+<div>
+  <label for="name">Name: </label>
+  <input type="text" id="name" #bookNameInput />
+  <button type="button" (click)="searchBook(bookNameInput.value)">ค้นหา</button>
+  <!-- <div class="container">
+    <div *ngFor="let book of bookList">
+      <span>
+        <h2>
+          {{ book.name }}<sub>(isbn:{{ book.isbn }})</sub>
+        </h2>
+      </span>
+      <span>Country: {{ book.country }}</span>
+      <span>Publisher: {{ book.publisher }}</span>
+    </div>
+  </div> -->
+  <div style="margin-top: 2rem">
+    <p-table [value]="bookList">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>isbn</th>
+          <th>Name</th>
+          <th>Publisher</th>
+          <th>Country</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-book>
+        <tr>
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.name }}</td>
+          <td>{{ book.publisher }}</td>
+          <td>{{ book.country }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

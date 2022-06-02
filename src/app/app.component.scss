@@ -11,5 +11,34 @@
     color: #fff;
     border: 0;
     outline: 0;
+    padding: 4px;
+  }
+  button {
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    margin: 3px;
+    color: #fff;
+    background-color: rgb(13, 110, 255);
+  }
+  .user-name {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      span {
+        transition: all 0.5s;
+        &:hover {
+          font-size: 30px;
+          color: rgb(35, 117, 240);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

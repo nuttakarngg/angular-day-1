@@ -20,6 +20,28 @@
 <div class="border-1" *ngIf="showMaxMinMeter">
   <button class="close-button" (click)="showMaxMinMeter = false">x</button>
   <h4>Max-Min Meter Componenet:</h4>
-  <app-max-min-meter minLabel="Width Value" maxLabel="Height Value" ></app-max-min-meter>
+  <app-max-min-meter
+    minLabel="Width Value"
+    maxLabel="Height Value"
+  ></app-max-min-meter>
+</div>
+<div class="border-1">
+  <h4>*ngFor Example</h4>
+  <ul class="user-name">
+    <li *ngFor="let user of users; let idx = index">
+      <span>{{ user }}</span>
+      <span class="close-button" (click)="removeUser(idx)">x</span>
+    </li>
+  </ul>
+  <button type="button" (click)="addUser()">Push</button>
+  <button type="button" (click)="popUser()">Pop</button>
+</div>
+<div class="border-1" style="display: block">
+  <h4>Prime Table & Book api</h4>
+  <app-books></app-books>
+</div>
 
+<div class="border-1" style="display: block">
+  <h4>Web Shopping</h4>
+  <app-shopping></app-shopping>
 </div>
